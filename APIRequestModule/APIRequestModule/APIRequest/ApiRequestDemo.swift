@@ -20,7 +20,7 @@ class ApiRequestDemo {
         let headerParameter = ["requestToken" : "abc123!@#"]
         
         //make the APIRequestCall
-        let rxAlamofireClass = RxAlmofireClass.sharedInstance
+        let rxAlamofireClass = ApiRequest.sharedInstance
         rxAlamofireClass.newtworkRequestAPIcall(serviceName: "googleApi", requestType: .post, parameters: requestParameter, headerParams: headerParameter, responseType: "GoogleApi")
         
         //observe the APIRequestCall via RxSwift

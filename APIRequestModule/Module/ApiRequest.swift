@@ -12,9 +12,9 @@ import RxCocoa
 import RxAlamofire
 import Alamofire
 
-class RxAlmofireClass {
+class ApiRequest {
     
-    static let sharedInstance = RxAlmofireClass()
+    static let sharedInstance = ApiRequest()
     
     let disposebag = DisposeBag()
     let apiResponse = PublishSubject<ApiResponse>()
